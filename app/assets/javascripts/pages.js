@@ -69,7 +69,8 @@ $(document).ready(function() {
 
 //SAVE TO CSV
 $(function() {
-  $(".submit").click(function() {
+
+  $("form").submit(function() {
     var name = $("#name").val();
     var dataString = 'name=' + name;
 
@@ -78,8 +79,9 @@ $(function() {
     } else {
       $.ajax({
         type: "POST",
-        url: "rsvp.php",
-        data: dataString,
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        dataType: "JSON",
         success: function() {
           $('.alert-danger').fadeIn().hide();
           $('.alert-success').fadeIn().fadeOut(3000);

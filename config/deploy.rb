@@ -36,7 +36,6 @@ task deploy: :environment do
     invoke :'bundle:install'
     invoke :'rails:db_migrate'
     invoke :'rails:assets_precompile'
-    invoke :"rake['assets:sync']"
 
     to :launch do
       invoke :'restart'

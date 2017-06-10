@@ -75,15 +75,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <%= image_tag "place5.jpg" %>
-        <%= image_tag "place6.jpg" %>
+        <%= image_tag "skansonia-one.jpg" %>
+        <%= image_tag "skansonia-two.jpg" %>
       </div>
       <div class="col-md-12 text-center">
         <h3>Ceremony & Reception</h3>
-        <h5>TAMAN SEDAYU INDAH</h5>
-        <p>3:30pm - Late</p>
-        <p>Jl. Gunung Semeru</p>
-        <p>Puncak, Jawa Timur</p>
+        <h5>SKANSONIA</h5>
+        <p>12:00pm - 5:00pm</p>
+        <p>205 NE Northlake Way/p>
+        <p>Seattle, WA 98105</p>
         <a href="#rsvp" class="btn btn-default">RSVP NOW <i class="ion-ios-arrow-right"></i></a>
       </div>
     </div>
@@ -168,14 +168,14 @@
           <br>I hope you enjoy our wedding party.</p>
       </div>
       <div class="col-md-12 text-center">
-        <form class="form-inline" method="post" name="form">
+         <%= form_tag('/rsvp', class: "form-inline") do |f| %>
           <div class="alert alert-danger" style="display:none;"> Please enter your name!</div>
           <div class="alert alert-success" style="display:none;"> Thanks for your RSVP!</div>
           <div class="form-group">
             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name / Names">
           </div>
           <button type="submit" class="btn btn-default submit">RSVP <i class="ion-ios-arrow-right"></i></button>
-        </form>
+         <% end %>
       </div>
     </div>
   </div>
@@ -185,7 +185,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        COPYRIGHT &copy; 2016 TEMPLATE SUPER - ALL RIGHTS RESERVED
+        COPYRIGHT &copy; 2017 Matt & Jessica - ALL RIGHTS RESERVED
       </div>
     </div>
   </div>
