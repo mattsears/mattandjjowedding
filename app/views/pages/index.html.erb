@@ -56,13 +56,24 @@
       <div class="people">
         <div class="col-md-4 col-sm-6 col-md-offset-2">
           <%= image_tag "matt2.jpg" %>
+          <p>
 
-          <p>Many things that made me always love you. Gentleness and courtesy everything can make me fly into the sky. Until probably can not think of myself before can love you. </p>
+          </p>
+
         </div>
         <div class="col-md-4 col-sm-6">
-          <%= image_tag "jess.jpg" %>
-
-          <p>Simplicity you showed, it can always make me happy. Serenity, honesty, happiness makes me endlessly mention your name in my mind. Thank you for everything. </p>
+          <%= image_tag "jess3.jpg" %>
+          <p>
+            Reaching out, on a random Thursday morning, before teaching breakdancing,
+            to a man in a picture with a pink shirt, nerdy-hip glasses and the most beguiling grin.
+            I mean, who wears pink collared shirts!! She knew this man meant business.
+            "Hey you..you're awesome", she (basically) wrote, not expecting anything in return.
+            <br />
+            Yet respond he did...
+            <br />
+            Thus began a road that asked for more; to dig deeper, love harder and to evolve.
+            What she got for reaching out, was the return of a love that is home.
+          </p>
         </div>
       </div>
 
@@ -81,10 +92,10 @@
       <div class="col-md-12 text-center">
         <h3>Ceremony & Reception</h3>
         <h5>SKANSONIA</h5>
-        <p>12:00pm - 5:00pm</p>
-        <p>205 NE Northlake Way/p>
-        <p>Seattle, WA 98105</p>
-        <a href="#rsvp" class="btn btn-default">RSVP NOW <i class="ion-ios-arrow-right"></i></a>
+        <p>1:00pm - 5:00pm</p>
+        <p>205 NE Northlake Way</p>
+          <p>Seattle, WA 98105</p>
+          <a href="#rsvp" class="btn btn-default">RSVP NOW <i class="ion-ios-arrow-right"></i></a>
       </div>
     </div>
   </div>
@@ -98,28 +109,18 @@
       <div class="col-md-12 text-center">
         <h3>Where to stay?</h3>
       </div>
-      <div class="col-md-4 col-sm-6 col-md-offset-2">
+      <div class="col-md-6 col-sm-6 col-md-offset-3">
         <div class="box">
-          <%= image_tag "stay1.jpg" %>
-
-          <h5>HOTEL NYAMANE</h5>
-          <p>Mention our names when making your reservation to recieve special the group booking discount.</p>
+          <a href="https://www.airbnb.com/s/seattle/homes" target="_new"><%= image_tag "airbnb.png" %></a>
+          <p>
+            <br />
+            Seattle hotels can be a bit pricey in the summer, so Airbnb may be
+            your best bet for lodging. Book a stay in a hip garden apartment in
+            Capitol Hill, or if you want to be closer to the venue, check out
+            Fremont or Wallingford.
+          </p>
           <br>
-          <p>Jl. Pramuka 89</p>
-          <p>Siap Grak 123</p>
         </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="box">
-          <%= image_tag "stay2.jpg" %>
-
-          <h5>HOTEL KERATON</h5>
-          <p>Mention our names when making your reservation to recieve 10% discount.</p>
-          <br>
-          <p>Ring Road Utara</p>
-          <p>78 Jalur Cepat</p>
-        </div>
-
       </div>
     </div>
   </div>
@@ -130,45 +131,34 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h3>Give the gift of presents</h3>
+        <h3>What to give as a present?</h3>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <%= image_tag "reg1.png" %>
+      <div class="col-md-4 col-sm-6 col-md-offset-2">
+        <a href="https://www.amazon.com/wedding/matt-sears-jessica-jobaris-seattle-september-2017/registry/2BMLBW1MXY024">
+          <%= image_tag "amazon_logo.png" %>
         </a>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <%= image_tag "reg2.png" %>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <%= image_tag "reg3.png" %>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <a href="#">
-          <%= image_tag "reg4.png" %>
+      <div class="col-md-4 col-sm-6 col-md-offset-0">
+        <a href="https://www.crateandbarrel.com/gift-registry/matt-sears-and-jessica-jobaris/r5708453">
+          <%= image_tag "crate.png" %>
         </a>
       </div>
     </div>
   </div>
-
 </section>
 
 <!-- RSVP 02 -->
-
 <section id="rsvp" class="rsvp-02">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h3>Say you'll come</h3>
-        <p>Please let us know if you will come,
-          <br>I hope you enjoy our wedding party.</p>
+        <h3>Say you'll be there</h3>
+        <p>Please let us know if you can make it.
+          <br>Sunday, August 1st at the latest.
+        </p>
       </div>
       <div class="col-md-12 text-center">
-         <%= form_tag('/rsvp', class: "form-inline") do |f| %>
+        <%= form_tag('/rsvp', class: "form-inline") do |f| %>
           <div class="alert alert-danger" style="display:none;"> Please enter your name!</div>
           <div class="alert alert-success" style="display:none;"> Thanks for your RSVP!</div>
           <div class="form-group">
@@ -176,7 +166,7 @@
             <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
           </div>
           <button type="submit" class="btn btn-default submit">RSVP <i class="ion-ios-arrow-right"></i></button>
-         <% end %>
+          <% end %>
       </div>
     </div>
   </div>
