@@ -58,14 +58,23 @@
           <%= image_tag "matt2.jpg" %>
           <p>
 
+            Little did I know how my life would change (for the better!) the
+            first time we met on that cold, rainy Tuesday evening. It was my first
+            trip to Seattle and I will ever forget when I first laid eyes on
+            on her. She let out a small but audible gasp and I was nearly
+            frozen with excitement. No words were immedialty said, we just walked
+            towards each other and embraced.
+            <br />
+            <br />
+            Nearly two years later, in a lake house just outside Seattle, I asked
+            Jessica to be my wife.
           </p>
-
         </div>
         <div class="col-md-4 col-sm-6">
           <%= image_tag "jess3.jpg" %>
           <p>
             Reaching out, on a random Thursday morning, before teaching breakdancing,
-            to a man in a picture with a pink shirt, nerdy-hip glasses and the most beguiling grin.
+            to a man in a picture with a pink shirt, nerdy-hip glasses and the most irresistible grin.
             I mean, who wears pink collared shirts!! She knew this man meant business.
             "Hey you..you're awesome", she (basically) wrote, not expecting anything in return.
             <br />
@@ -94,8 +103,7 @@
         <h5>SKANSONIA</h5>
         <p>1:00pm - 5:00pm</p>
         <p>205 NE Northlake Way</p>
-          <p>Seattle, WA 98105</p>
-          <a href="#rsvp" class="btn btn-default">RSVP NOW <i class="ion-ios-arrow-right"></i></a>
+        <p>Seattle, WA 98105</p>
       </div>
     </div>
   </div>
@@ -153,20 +161,9 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <h3>Say you'll be there</h3>
-        <p>Please let us know if you can make it.
+        <p>Please RSVP with the link in your email invitation and let us know if you can make it.
           <br>Sunday, August 1st at the latest.
         </p>
-      </div>
-      <div class="col-md-12 text-center">
-        <%= form_tag('/rsvp', class: "form-inline") do |f| %>
-          <div class="alert alert-danger" style="display:none;"> Please enter your name!</div>
-          <div class="alert alert-success" style="display:none;"> Thanks for your RSVP!</div>
-          <div class="form-group">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name / Names">
-            <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
-          </div>
-          <button type="submit" class="btn btn-default submit">RSVP <i class="ion-ios-arrow-right"></i></button>
-          <% end %>
       </div>
     </div>
   </div>
